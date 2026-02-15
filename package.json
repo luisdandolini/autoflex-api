@@ -1,7 +1,6 @@
 {
   "name": "autoflex-api",
   "packageManager": "yarn@4.10.3",
-  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
