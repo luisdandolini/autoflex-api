@@ -7,6 +7,10 @@ import ProductionController from "../app/controllers/ProductionController";
 
 const routes = Router();
 
+app.get("/", (req, res) => {
+  res.send("API funcionando!");
+});
+
 routes.get("/products", asyncHandler(ProductController.index));
 routes.post("/products", asyncHandler(ProductController.create));
 routes.put("/products/:id", asyncHandler(ProductController.update));
