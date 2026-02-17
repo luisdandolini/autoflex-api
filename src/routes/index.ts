@@ -7,8 +7,11 @@ import ProductionController from "../app/controllers/ProductionController";
 
 const routes = Router();
 
-app.get("/", (req, res) => {
-  res.send("API funcionando!");
+routes.get("/", (req, res) => {
+  res.json({
+    message: "API Autoflex rodando com sucesso!",
+    status: "online",
+  });
 });
 
 routes.get("/products", asyncHandler(ProductController.index));
