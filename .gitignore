@@ -7,6 +7,7 @@ node_modules/
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+.yarnrc.yml
 
 # Environment variables
 .env

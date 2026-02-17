@@ -1,11 +1,10 @@
 import express from "express";
 import routes from "./routes";
+import cors from "cors";
 import { errorHandler } from "./app/middlewares/errorHandler";
 
 const app = express();
 const port = 3000;
-
-const cors = require("cors");
 
 app.use(cors());
 
